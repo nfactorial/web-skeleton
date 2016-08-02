@@ -47,4 +47,12 @@ Once launched, you may make changes to your web-page in any of the files within 
 detect those changes and rebuild the website for you dynamically. Allowing you to refresh the browser window to see
 your changes immediately.
 
-
+Deploying
+=========
+Once your are happy with your web-page, you will want to upload it to a web-server for access from the internet. To
+do this, return to the command line and run:
+```
+npm run deploy
+```
+Webpack will now take your application and build files suitable for distribution on a web-server. It will store all
+the generated files inside the ./dist folder. Once finished, you may upload this folder to your web-server.
