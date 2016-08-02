@@ -1,0 +1,30 @@
+#
+node_modules
+
+# Mac cache information
+.DS_Store
+
+*.log
+
+# WebStorm IDE settings are local only
+.idea
+.env
+
+# Do not version control private aws files
+.aws*
+
+# No need to version control zip packages
+*.zip
+
+# Do not put build or distribution folders into source-control
+build
+dist
+
+# Webpack bundle is built locally
+development/bundle.js
+
+# No need to version control generated files
+development/**/*.css
+development/**/*.css.map
+development/**/*-compiled.js
+development/**/*-compiled.js.map
