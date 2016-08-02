@@ -8,13 +8,15 @@ var config = {
         this.resolve.alias[name] = path;
         //this.module.noParse.push(new RegExp(path));
     },
+    context: __dirname + '/development',
     resolve: {
         alias: {}
     },
     entry: {
-        app: ['./development/main.jsx']
+        app: ['./main.jsx']
     },
     devServer: {
+        contentBase: './development',
         proxy: {
             '/auth/*': 'http://ec2-54-171-242-80.eu-west-1.compute.amazonaws.com:80/'
         }
