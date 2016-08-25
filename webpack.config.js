@@ -17,9 +17,6 @@ var config = {
     },
     devServer: {
         contentBase: './development',
-        proxy: {
-            '/auth/*': 'http://ec2-54-171-242-80.eu-west-1.compute.amazonaws.com:80/'
-        }
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -69,6 +66,5 @@ config.addVendor('react-dom', module_dir + '/react-dom/dist/react-dom.js');
 config.addVendor('jquery', module_dir + '/jquery/dist/jquery.min.js');
 config.addVendor('bootstrap', module_dir + '/bootstrap/dist/js/bootstrap.js');
 config.addVendor('bootstrap.css', module_dir + '/bootswatch/superhero/bootstrap.css');
-config.addVendor('playcanvas', module_dir + '/@nfactorial/playcanvas/dist/playcanvas-stable.min.js');
 
 module.exports = config;
